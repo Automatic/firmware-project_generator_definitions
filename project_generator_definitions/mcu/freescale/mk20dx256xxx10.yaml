@@ -1,0 +1,26 @@
+mcu:
+    core:
+    - cortex-m4
+    name:
+    - mk20dx256xxx10
+    vendor:
+    - freescale
+tool_specific:
+    uvision5:
+        TargetOption:
+            Cpu:
+            - IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000) IROM(0x00000000,0x00040000) IROM2(0x10000000,0x00040000) CPUTYPE("Cortex-M4") CLOCK(12000000) ELITTLE
+            Device:
+            - MK20DX256xxx10
+            DeviceId:
+            - 5845
+            FlashDriverDll:
+            - UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN2 -FF0MK_P256 -FS00 -FL040000 -FF1MK_D256 -FS110000000 -FL140000 -FP0($$Device:MK20DX256xxx10$Flash\MK_P256.FLM) -FP1($$Device:MK20DX256xxx10$Flash\MK_D256.FLM))
+            PackID:
+            - Keil.Kinetis_K20_DFP.1.5.2
+            RegisterFile:
+            - $$Device:MK20DX256xxx10$Device\Include\MK20D10.h
+            SFDFile:
+            - $$Device:MK20DX256xxx10$SVD\MK20D10.svd
+            Vendor:
+            - NXP

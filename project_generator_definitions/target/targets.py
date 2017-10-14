@@ -158,6 +158,9 @@ PROGENDEF_TARGETS = {
     'teensy-31': {
         'mcu':'mcu/freescale/mk20dx256xxx7',
     },
+    'mk20dx256xxx10': {
+        'mcu':'mcu/freescale/mk20dx256xxx10',
+    },
     'frdm-k22f': {
         'mcu':'mcu/freescale/mk22dn512xxx5',
     },
